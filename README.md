@@ -13,10 +13,14 @@ The E-commerce backend project link (https://github.com/purbo75/E-Commerce-site-
 	
 </ol>
 ********
-<p> To install minikube : </P>
+<p> To install minikube : </P><br>
+
 	sudo apt-get update
+
 	curl -LO https://storage.googleapis.com/minikube/releases/latest/minikube-linux-amd64
+
 	sudo install minikube-linux-amd64 /usr/local/bin/minikube
+
 	minikube start
 
 ***********
@@ -26,23 +30,30 @@ The commands to run the deployment on Ubuntu - <br>
 
 To start minikube: 
 
-	minikube start<br>
+	minikube start
 
 To enable ingress-nginx:<br>
 
-	kubectl addon enable ingress-inginx<br>
+	kubectl addon enable ingress-inginx
 		
-	kubectl apply -f FileName<br>
+	kubectl apply -f FileName
 
 **********
 kubectl command-<br>
 
 To get the pods information<br>
-	kubectl get pods<br>
+
+	kubectl get pods
+
 To get the service information<br>
-	kubectl get service<br>
+
+	kubectl get service
+
 To get the namespace information<br>
-	kubectl get ns<br>
+
+	kubectl get ns
+
 To get the pod's  log<br>
-	kubectl logs pod_name<br>
+
+	kubectl logs pod_name
 
