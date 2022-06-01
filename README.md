@@ -5,6 +5,7 @@ The E-commerce backend project link (https://github.com/purbo75/E-Commerce-site-
 <br>
  
 ********
+
 <h2>Tools</h2>
 <ol>
 	<li>Docker</li>
@@ -12,7 +13,9 @@ The E-commerce backend project link (https://github.com/purbo75/E-Commerce-site-
 	<li>Minikube</li>
 	
 </ol>
+
 ********
+
 <p> To install minikube : </P><br>
 
 	sudo apt-get update
@@ -34,7 +37,7 @@ To start minikube:
 
 To enable ingress-nginx:<br>
 
-	kubectl addon enable ingress-inginx
+	kubectl addons enable ingress-inginx
 		
 	kubectl apply -f FileName
 
@@ -47,7 +50,7 @@ To get the pods information<br>
 
 To get the service information<br>
 
-	kubectl get service
+	kubectl get services
 
 To get the namespace information<br>
 
@@ -56,4 +59,21 @@ To get the namespace information<br>
 To get the pod's  log<br>
 
 	kubectl logs pod_name
+
+To restart a pod:<br>
+	
+	kubectl rollout restart deployment pod_name
+
+To get the logs of ingress- nginx controller: <br>
+
+	kubectl logs  -n ingress-nginx  ingress-nginx-controller_name
+
+To set service to a local port:<br>
+
+	 kubectl port-forward service/server-cluster-ip-service local_port:service's port 
+
+To execute command on pod's bash:<br>
+
+	kubectl exec --stdin --tty pod_name  -- sh
+
 
