@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: sever-deployment
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      component: sever
+  template:
+    metadata:
+      labels:
+        component: sever
+    spec:
+      containers:
+      - name: sever-backend
+        image: purbo75/backend
+        ports:
+        - containerPort: 5000
