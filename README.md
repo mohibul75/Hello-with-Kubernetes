@@ -11,7 +11,7 @@ The E-commerce backend project link (https://github.com/purbo75/E-Commerce-site-
 	<li>Kubernetes</li>
 	<li>Minikube</li>
 	
-</ol><br>
+</ol>
 ********
 <p> To install minikube : </P>
 	sudo apt-get update
@@ -24,10 +24,12 @@ The E-commerce backend project link (https://github.com/purbo75/E-Commerce-site-
 	
 The commands to run the deployment on Ubuntu - <br>
 
-To start minikube: <br>
+To start minikube: 
+
 	minikube start<br>
 
 To enable ingress-nginx:<br>
+
 	kubectl addon enable ingress-inginx<br>
 		
 	kubectl apply -f FileName<br>
