@@ -12,13 +12,13 @@ The E-commerce backend project link (https://github.com/purbo75/E-Commerce-site-
 	<li>Minikube</li>
 	
 </ol><br>
-*********
-<p> To install minikube : </P><br>
-	sudo apt-get update<br>
-	curl -LO https://storage.googleapis.com/minikube/releases/latest/minikube-linux-amd64 <br>
-	sudo install minikube-linux-amd64 /usr/local/bin/minikube <br>
+********
+<p> To install minikube : </P>
+	sudo apt-get update
+	curl -LO https://storage.googleapis.com/minikube/releases/latest/minikube-linux-amd64
+	sudo install minikube-linux-amd64 /usr/local/bin/minikube
 	minikube start
-<br>
+
 ***********
 
 	
