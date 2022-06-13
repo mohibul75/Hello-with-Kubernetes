@@ -3,8 +3,27 @@
 This project is about  kubernetes deployment for E-commerce backend.
 The E-commerce backend project link (https://github.com/purbo75/E-Commerce-site-BackEnd-with-Node-js.git )
 <br>
+
+***********
+
+Basically this is beginner level project for kubernetes.One can hellow with kubernetes by doing this project.
  
 ********
+
+<h2> About this project</h2>
+
+This is a simple project where a docker image run from kubernetes. A docker image named purbo75/backend from dockerhub run on a deployment file(server-deployment.ymal)
+.For this Deployment, A Service is exposed from server-cluster-service.yaml. To access this service, ingress-ngins is configured from ingress service.yaml.
+
+<br>
+
+To configured domain name edit /etc/hosts with the minikube ip.    
+
+<br>
+
+The docker image return a list of json product list(/api/products).
+
+************
 
 <h2>Tools</h2>
 <ol>
@@ -37,11 +56,16 @@ To start minikube:
 
 To enable ingress-nginx:<br>
 
-	kubectl addons enable ingress-inginx
+	kubectl addons enable ingress-nginx
+
+or
+	
+	minikube addons enable ingress-nginx
 		
 	kubectl apply -f FileName
 
 **********
+
 kubectl command-<br>
 
 To get the pods information<br>
