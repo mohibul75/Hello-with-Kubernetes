@@ -1,4 +1,4 @@
-<h1>E-commerce Backend Deployment on kubernetes</h1><br>
+<h1>Hello with kubernetes</h1><br>
 
 This project is about  kubernetes deployment for E-commerce backend.
 The E-commerce backend project link (https://github.com/purbo75/E-Commerce-site-BackEnd-with-Node-js.git )
@@ -6,7 +6,7 @@ The E-commerce backend project link (https://github.com/purbo75/E-Commerce-site-
 
 ***********
 
-Basically this is beginner level project for kubernetes.One can hellow with kubernetes by doing this project.
+Basically this is beginner level project for kubernetes.One can hello with kubernetes by doing this project.
  
 ********
 
@@ -75,6 +75,16 @@ To get the pods information<br>
 To get the service information<br>
 
 	kubectl get services
+
+To get all service regardless of all name-space
+
+	kubectl get svc -A
+
+To edit ingress-nginx service type
+
+	kubectl edit service ingress-nginx-controller -n ingress-nginx
+
+then edit the spec.type(as example one has to change it from Nodeport to Loadbalancer, just edit the type).<br>
 
 To get the namespace information<br>
 
