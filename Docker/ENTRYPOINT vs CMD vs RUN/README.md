@@ -2,7 +2,7 @@
 In a Dockerfile, instructions can be written in two formats: the exec form and the shell form. The choice between these two formats applies to the RUN, CMD, and ENTRYPOINT instructions. Below are examples illustrating both formats:
 
 ### Shell Format
-In a Dockerfile, instructions can be written in two formats: the exec form and the shell form. The choice between these two formats applies to the RUN, CMD, and ENTRYPOINT instructions. Below are examples illustrating both formats:
+In the shell form, instructions are written as a simple string, similar to how commands would be entered directly in a terminal. The following examples demonstrate the shell form:
 - CMD ls -la
 - ENTRYPOINT ls -la
 - RUN apt-get update
